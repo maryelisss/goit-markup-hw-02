@@ -1,53 +1,191 @@
-/* основний колір тексту #212121 */
-/* другорядний колір тексту #757575 */
-/* білий #FFFFFF */
-/* акцент блакитний #2196F3  */
-
+:root {
+--main-text-color:#212121;
+--second-texr-color:#757575;
+--color-wtite:#FFFFFF;
+--brand-color:#2196F3;
+}
 
 
 body {
-   background: #FFFFFF;
+   background: var(--color-wtite);
     }
 .list {
     list-style: none;
 }
+
+/* header */
 header {
     width: 1600;
     height: 80;
-    background-color: fff;
-    }
+        }
 a {
     text-decoration: none
 }    
 .header-logo {
-    color: #2196F3 ;
-   
-}
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+    color: var(--brand-color) ;
+   }
 .header-logo-studio {
     color: #000000;
 }
 .site-nav a {
-    color: #212121
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    color: var(--main-text-color)
 }
 .site-nav a:hover, 
 .site-nav a:focus {
-    color: #2196F3;
+    color: var(--brand-color);
 }
 .auth-nav {
-color: #757575;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+color: var(--second-texr-color);
 }
 .auth-nav:hover,
 .auth-nav:focus {
-    color: #2196F3;
+    color: var(--brand-color);
 }
+/* main */
 .hero {
     background-color: #2F303A;
 }
 .hero-title {
-    color: #FFFFFF
-}
-.hero-button {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    color: var(--color-wtite)
     
 }
+.hero-button {
+    ont-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    background-color: var(--brand-color);
+    color: var(--color-wtite);
+    
+}
+.benefits {
+
+}
+.benefits h2 {
+    display: none;
+}
+
+.benefits h3 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+   color: var(--main-text-color); 
+}
+.benefits p {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    color: var(--second-texr-color);
+}
+.working h2 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--main-text-color) ;
+}
+.team {
+    background-color: #F5F4FA;;
+}
+.team h2  {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+.team h3 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+.team p {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    color: var(--second-texr-color);
+}
+/* footer */
+footer {
+background-color: #2F303A;
+}
+.footer-logo {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+    color: var(--brand-color);
+}
+.footer-logo-studio {
+    color: var(--color-wtite);
+}
+address {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+}
+.company-address {
+    color: var(--color-wtite);
+    }
+.company-mail,
+.company-phone {
+    color: rgba(255, 255, 255, 0.6);
+    }
